@@ -19,6 +19,6 @@ try:
     logging.info(" Database 'alx_book_store' created successfully!")
   cursor.close()
   mydb.close()
-except Error as e:
+except mysql.connector.Error:
   logging.info("Connection failed")
 
