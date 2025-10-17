@@ -15,7 +15,7 @@ try:
 
   if mydb.is_connected():
     cursor = mydb.cursor()
-    cursor.execute("CREATE DATABASE IF NOT EXITS alx_book_store")
+    cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
     logging.info(" Database 'alx_book_store' created successfully!")
   cursor.close()
   mydb.close()
